@@ -1,6 +1,6 @@
-GLM: Coursework Assignment Week 1
+GLM: Coursework Assignment 1
 
-By: Saif Rehman 31781792
+By: Saif Rehman
 
 1. **Introduction**
 
@@ -63,22 +63,14 @@ Here are the summary statistics of the various variables to get an idea of their
 |   | Price2014 | Acre | Bikescore | Distance | Garage\_spaces | No\_full\_baths |
 | --- | --- | --- | --- | --- | --- | --- |
 | Mean | 293.1 | 0.2574 | 57.28 | 1.11432 | 0.7596 | 1.452 |
-| 1
-# st
- – 3
-# rd
- Quartile | [212.9, 334.2] | [0.1675, 0.3300] | [36, 77.25] | [0.32879, 1.89579] | [0, 1] | [1, 2] |
+| 1st–3rd Quartile | [212.9, 334.2] | [0.1675, 0.3300] | [36, 77.25] | [0.32879, 1.89579] | [0, 1] | [1, 2] |
 | Median | 272.9 | 0.2500 | 54.50 | 0.76042 | 1 | 1 |
 | Range | [132.1, 879.3] | [0.05, 0.56] | [18, 97] | [0.03883, 3.97678] | [0, 4] | [1, 4] |
 
 |   | No\_half\_baths | No\_rooms | Squarefeet | Walkscore | Zip |
 | --- | --- | --- | --- | --- | --- |
 | Mean | 0.2212 | 6.615 | 1.566 | 38.88 | 1061 |
-| 1
-# st
- – 3
-# rd
- Quartile | [0, 0] | [5, 7.25] | [1.206, 1.832] | [14.75, 60.75] | [1060, 1062] |
+| 1st–3rd Quartile | [0, 0] | [5, 7.25] | [1.206, 1.832] | [14.75, 60.75] | [1060, 1062] |
 | Median | 0 | 6.5 | 1.516 | 36 | 1062 |
 | Range | [0, 1] | [4, 14] | [0.524, 4.030] | [2, 94] | [1060, 1062] |
 
@@ -184,26 +176,15 @@ Plotting distance to the trail and walkscore shows that as distance to the trail
 
 I performed a series of Normal linear regression models where I treated Price2014 as the response variable and treated acre, bedF, bikescore, distance, garageF, fullbathF, halfbathF, roomF, squarefeet, walkscore, and zip as the covariates.
 
-In formal mathematical terms, if _y_
+In formal mathematical terms, if _y_ἰ is the value of Price2014 for respondent _ἰ_, then the model was fitted as:
 
-# ἰ
-
-#
-is the value of Price2014 for respondent _ἰ_, then the model was fitted as:
-
-_y_
-# ἰ
-= _β_
-# 0
-+ ∑ἰβixij+ϵi
+_y_ἰ = _β_0 + ∑ἰβixij+ϵi
 
 with
 
 ϵi=N(0,σ2)
 
-Where _x_
-
-# ij
+Where _x_ij
 is the value of the jth covariate for respondent _ἰ_.
 
 1. **Statistical Analysis**
